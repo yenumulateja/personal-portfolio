@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="icon" type="image/icon" href="3.gif">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section class="container">
+        <header>Personal Portfolio</header>
+        <ul>
+            <li><a href="personal.html">Home</a></li>
+            <li><a href="About.html">about me</a></li>
+            <li><a href="project.html">projects</a></li>
+            <li><a href="skills.html">skills</a></li>
+            <li><a href="resume.html">resume</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </section>
+    <h2>Contact Us</h2>
+    
+    <div class="contact">
+        <div class="address">
+            <h1><a href="https://maps.app.goo.gl/8rGwfAUb63b2DwP9A"><img src="add.gif"></a>Address</h1>
+            <p>6-45,peerlachavidi stret,Cumbum mandal<br>
+               prakasam district Andhra pradesh</p>
+            <h1><img src="phone.gif">Phone</h1>
+            <p>960-319-5632</p>
+            <h1><img src="em.gif">Email</h1>
+            <p><a href="email" id="mail">yenumulaharitejaswapna@gmail.com</a></p>
+
+        </div>
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30754.664930982122!2d78.9600842746047!3d15.520262991272206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb51fcf59c478b1%3A0x86268b731f40bff7!2sThurimella%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1741852627590!5m2!1sen!2sin" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+    <div class="form">
+        <h3>Send Message</h3>
+        <form>
+            <div class="one">
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullname" placeholder="Enter Full Name" required>
+            </div>
+            <div class="one">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter Email Address" required>
+            </div>
+            <div class="one">
+                <label for="message">Message</label>
+                <input type="textarea" name="message" placeholder="Enter your message..." id="area" required>
+            </div>
+            
+                <input type="button" value="Send" id="btn" onclick="success()">
+        </form>
+</div>
+<script>
+    function  success(){
+        alert("Message sent successfully");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to right,lightpink,lightcyan,lightgreen,lightblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 2px 3px 4px rgb(117, 116, 116);
+}
+.container header{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.container .form{
+    margin-top: 20px;
+}
+.form .one{
+    width: 100%;
+    margin-top: 20px;
+}
+.form label{
+    color: #333;
+}
+.form .one input{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border-radius:6px ;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+}
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+.form :where(.gender-options,.gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.form .gender{
+    column-gap: 5px;
+    cursor: pointer;
+}
+.form .gender-box{
+    color: #333;
+    margin-top: 20px;
+
+}
+.form .address{
+    margin-top: 20px;
+    color: #333;
+    font-size: 20px;
+}
+.form .two{
+    width: 100%;
+    margin-top: 10px;
+}
+.form .two input{
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+.form .three{
+    display: flex;
+    column-gap: 15px;
+}
+.three select{
+    height: 100%;
+    width: 100%;
+    color: #707070;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid #ddd;
+
+}
+.form .four{
+    display: flex;
+    column-gap: 15px;
+}
+.btn{
+    margin-top: 20px;
+}
+.btn input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    height: 100%;
+    font-size: 17px;
+    background-color: purple;
+    color: #fff;
+    border-radius:6px;
+}
+button:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+button:active+.loader{
+    display: inline-block;
+    animation: dots 3s steps(4,end) infinite;
+}
+@keyframes dots{
+    0%{content:"searching";}
+    25%{content:"searching.";}
+    50%{content:"searching..";}
+    75%{content:"searching...";}
+    100%{content:"searching";}
+}
+
+@media screen and(max-width:500px) {
+    .form .column{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .form .three{
+        flex-wrap: wrap;
+    }
+    
+}

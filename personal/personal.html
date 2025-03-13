@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website</title>
+    <link rel="stylesheet" href="personal.css">
+    <link rel="icon" type="image/png" href="3.gif">
+</head>
+<body>
+    <section class="container">
+        <header>Personal Portfolio</header>
+        <ul>
+            <li><a href="personal.html">Home</a></li>
+            <li><a href="About.html">about me</a></li>
+            <li><a href="project.html">projects</a></li>
+            <li><a href="skills.html">skills</a></li>
+            <li><a href="resume.html">resume</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </section>
+    <div class="sidenav" id="sidenav">
+        <header>Personal Portfolio</header>
+        <ul>
+            <li><a href="personal.html">Home</a></li>
+            <li><a href="About.html">About me</a></li>
+            <li><a href="project.html">projects</a></li>
+            <li><a href="skills.html">skills</a></li>
+            <li><a href="resume.html">resume</a></li>
+            <li><a href="contact.html">contact</a></li>
+
+        </ul>
+    </div>
+    <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
+    <div class="checkbox">
+        <select>
+            <option value="light">light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    <div class="main2">
+        <h5 class="anim"> Hi,I'm <span>Hari Teja</span></h5>
+        <h2 class="anim"><span>F</span>ront <span>E</span>nd <span>D</span>eveloper</h2>
+        <p class="anim">"To develop responsive and visually appealing web interfaces using HTML and CSS enhancing user experience and functionality."</p>
+        <a href="registration.html"><input type="button" value="Login" class="anim"></a>
+    </div>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/yenumula-hariteja-a3009425b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="l.png" id="linkedin" class="ic"></a>
+        <a href="https://www.instagram.com/yenumulah?igsh=MWFlNDZmaHB4aG14cg=="><img src="i.png" id="insta" class="ic"></a>
+        <a href="https://x.com/TejaYenum15994?s=09"><img src="x.png" id="x" class="ic"></a>
+    </div>
+    <script>
+        function toggleNav(){
+            var sidebar=document.getElementById("sidenav");
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
